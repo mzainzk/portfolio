@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Share+Tech&display=swap');
+
+/* Body */
+.g-base {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000f1;
+    font-family: 'Share Tech', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    min-height: 100vh; /*Use this to make sure the body spans the entire width of the page - vh stands for viewport height*/
+    color: #434242;
+    margin:0px;
+}
+
+/* Navigation */
+#g-navigation {                     /*To make the entire header grey*/
+    background-color: #242323;
+    a:hover {
+        color: #2fa739;
+    }
+    .navigation{                    /*To specify limits for the buttons and modify them*/
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        max-width: 1100px;
+        margin: 0 auto; 
+    }
+    .nav-link{
+        padding: 20px;
+        color: rgb(36, 165, 133);
+        font-weight:200;
+        font-size: 1.8rem;
+        text-decoration: none;      /*Remove underline*/
+    }
+}
+
+/* Titles */
+#g-title{
+    color: white;
+    font-size: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom-style: groove;
+    padding-bottom: 12px;
+}
+
+/* Footer */
+#g-footer{
+    background-color: #242323;
+    a:hover {
+        color: #2fa739;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        max-width: 1100px;
+        margin: 0 auto; /* Center the navigation horizontally */
+    }
+
+    .footer-link{
+        padding: 20px;
+        color: rgb(36, 165, 133);
+        font-weight:200;
+        font-size: 2rem;
+    }
+}
+
+/* Index.htm page */
+#p-home{
+
+    max-width: 1100px;
+    margin: 0 auto;
+    flex:1; /* To make sure the body spans the entire page */
+
+    #s-main {
+        display: flex; 
+        justify-content: space-between; 
+        padding-top: 80px; 
+
+        .text {
+            display: flex;
+            flex-direction: column;    /* Stack heading and subheading */
+            justify-content: center; 
+        }
+
+        .heading {
+            color: white;
+            font-size: 4rem;
+        }
+
+        .subheading {
+            font-size: 2rem;
+            color: rgb(36, 165, 133);
+        }
+
+        .image img {
+            max-width: 100%; 
+            height: auto; 
+            max-height: 300px; 
+        }
+    }
+
+    #s-aside{
+        display: flex;
+        padding-bottom: 50px;
+        
+        p{
+            color: aliceblue;
+            font-size: 1.25rem;
+            border-style:groove;
+            border-color: rgb(36, 165, 133);
+            padding: 25px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+#p-resume{
+    flex:1;
+    padding-top: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-size: 1.3rem;
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .experience{
+        .company{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .location{
+                font-size: 1.3rem;
+                color: rgb(36, 165, 133);
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .role{
+        display: flex;
+        font-size: 1.1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        color: rgb(36, 165, 133);
+        padding-bottom: 20px;
+    }
+
+    #s-main{
+        flex: 2.5;
+
+        .company{
+            padding-top: 30px;
+            font-size: 1.8rem;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .experience{
+            border-right-style: groove;
+            border-color: rgb(36, 165, 133);
+            margin-right: 20px;
+            padding-right: 30px;
+            padding-bottom: 40px;
+        }
+        .role{
+            font-weight: bold;
+        }
+    }
+
+    #s-aside{
+        flex: 1.35;
+
+        .contactinfo{
+            padding-top: 30px;
+            font-size: 1.3rem;
+            padding-bottom: 30px;
+
+            .info{
+                padding-bottom: 7px;
+            }
+    
+            i{
+                color: rgb(36, 165, 133);
+            }
+        }
+        .school{
+            padding-top: 20px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding-bottom: 5px;
+        }
+        .role{
+            color: white;
+        }
+        .duration{
+            color: rgb(36, 165, 133);
+            padding-top: 17px;
+        }
+
+    }  
+
+}
+
+#p-samples{
+    flex:1;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: white;
+
+    .sample{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 40px;
+
+        .sampleinfo{
+            padding-right: 50px;
+            border-bottom-style: groove;
+            border-color: rgb(36, 165, 133);
+            padding-bottom: 40px;
+            .name{
+                font-size: 2rem;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .description{
+                font-size: 1.5rem;
+                padding-bottom: 15px;
+                color: rgb(36, 165, 133);
+            }
+            .techstack{
+                font-size: 1.3rem;
+            }
+        }
+
+        .imagesize{
+            width: 300px; /* Fixed width */
+            height: 200px; /* Fixed height */
+        }
+    }
+
+
+}
+
+/* Media Querries */
+
+
+@media screen and (max-width:1150px) {
+    #p-home{
+        max-width: 700px;
+    }
+    #p-resume{
+        max-width: 750px;
+    }
+    #p-samples{
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #g-navigation {
+        .navigation{
+            justify-content: center;
+        }
+    }
+    #g-footer{
+        .footer{
+            justify-content: center;
+        }
+    }
+    #p-home{
+        max-width: 400px;
+        #s-main {
+            .heading {
+                font-size: 3rem;
+            }
+            .subheading {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    #p-resume{
+        max-width: 450px;
+        flex-direction: column-reverse;
+        .heading{
+            border-top-style: groove;
+            font-size: 2rem;
+            padding-top: 30px;
+        }
+        #s-main{
+            .experience{
+                border-right-style: none;
+                margin-right: 0px;
+                padding-right: 0px;
+            }
+        }
+        #s-aside{
+            .education{
+                border-bottom-style: groove;
+            }
+        }
+    }
+    #p-samples{
+        max-width: 450px;
+        .sample{
+            flex-direction: column;
+            .sampleinfo{
+                padding-right: 50px;
+                border-bottom-style: none;
+            }
+            .samplephoto{
+                border-bottom-style: groove;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
