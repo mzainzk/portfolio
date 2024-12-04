@@ -333,3 +333,25 @@
     }
 }
 
+@media screen and (max-width:465px) {
+    #g-navigation {                     
+        
+        .navigation{
+            max-width: 500px;
+        }
+        .nav-link{
+            padding: 13px;
+            font-size: 1.7rem;
+        }
+    }
+    #p-home{
+        max-width: 350px;
+    }
+    #p-resume{
+        max-width: 350px;
+    }
+    #p-samples{
+        max-width: 350px;
+    }
+}
+
